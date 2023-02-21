@@ -1,0 +1,39 @@
+{
+    "remote": {
+        // "hostname": "10.42.0.169",
+        "hostname": "192.168.1.100",
+        // "hostname": "10.42.0.169",
+        "user": "root",
+        "port": "1234",
+    },
+    "rabbit": {
+        "hostname": "192.168.1.102",
+        // "hostname": "192.168.4.123",
+        // "hostname": "10.42.0.1",
+        "port": "5672",
+        "queue_name": "fft"
+    },
+    "sysroot_path": "/home/VincNL/Projects/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot",
+    "toolchain": "/home/VincNL/Projects/buildroot/output/host/bin/arm-none-linux-gnueabihf-",
+    "program_name": "send_packet",
+    "C_Cpp.default.compilerPath": "/home/VincNL/Projects/buildroot/output/host/bin/arm-none-linux-gnueabihf-gcc",
+    "C_Cpp.autoAddFileAssociations": true,
+    "C_Cpp.debugShortcut": false,
+    "files.associations": {
+        "utils.h": "c",
+        "stdint.h": "c",
+        "mman.h": "c",
+        "fft.h": "c",
+        "time.h": "c",
+        "string.h": "c",
+        "amqp_tcp_socket.h": "c",
+        "optional": "c",
+        "ostream": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
+    }
+}
