@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element data_in_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element data_out_cdc_fifo
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element log_cdc_0
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element log_controller_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element log_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element log_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element log_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element log_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element log_fifo
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
+   element out_clk
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element rffe_in_fifo
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element rffe_out_cdc_fifo
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CSXFC6D6F31C6" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="6_H6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="in_clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface name="in_reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <interface name="out_clk" internal="out_clk.clk_in" type="clock" dir="end" />
+ <interface
+   name="out_reset"
+   internal="out_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="sink"
+   internal="log_controller_0.sink"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="source"
+   internal="log_cdc_0.source"
+   type="avalon_streaming"
+   dir="start" />
+ <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
+  <parameter name="clockFrequency" value="150000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="data_in_fifo"
+   kind="altera_avalon_sc_fifo"
+   version="20.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="58" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="EMPTY_LATENCY" value="3" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="16384" />
+  <parameter name="SYMBOLS_PER_BEAT" value="1" />
+  <parameter name="USE_ALMOST_EMPTY_IF" value="0" />
+  <parameter name="USE_ALMOST_FULL_IF" value="0" />
+  <parameter name="USE_FILL_LEVEL" value="0" />
+  <parameter name="USE_MEMORY_BLOCKS" value="1" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_STORE_FORWARD" value="0" />
+ </module>
+ <module
+   name="data_out_cdc_fifo"
+   kind="altera_avalon_dc_fifo"
+   version="20.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="32" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="1" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <module name="log_cdc_0" kind="log_cdc" version="0.1" enabled="1">
+  <parameter name="AMPS_WIDTH" value="3" />
+  <parameter name="ATTENUATOR_WIDTH" value="6" />
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="FILTERS_WIDTH" value="2" />
+  <parameter name="MAX_PACKET_LEN" value="16384" />
+  <parameter name="design_env" value="QSYS" />
+ </module>
+ <module
+   name="log_controller_0"
+   kind="log_controller"
+   version="0.1"
+   enabled="1">
+  <parameter name="AMPS_WIDTH" value="3" />
+  <parameter name="ATTENUATOR_WIDTH" value="6" />
+  <parameter name="DATA_OUT_WIDTH" value="32" />
+  <parameter name="DATA_WIDTH" value="58" />
+  <parameter name="FILTERS_WIDTH" value="2" />
+  <parameter name="MAX_PACKET_LEN" value="16384" />
+  <parameter name="design_env" value="QSYS" />
+ </module>
+ <module name="out_clk" kind="clock_source" version="20.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="rffe_in_fifo"
+   kind="altera_avalon_sc_fifo"
+   version="20.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="13" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="EMPTY_LATENCY" value="3" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="SYMBOLS_PER_BEAT" value="1" />
+  <parameter name="USE_ALMOST_EMPTY_IF" value="0" />
+  <parameter name="USE_ALMOST_FULL_IF" value="0" />
+  <parameter name="USE_FILL_LEVEL" value="0" />
+  <parameter name="USE_MEMORY_BLOCKS" value="1" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_STORE_FORWARD" value="0" />
+ </module>
+ <module
+   name="rffe_out_cdc_fifo"
+   kind="altera_avalon_dc_fifo"
+   version="20.1"
+   enabled="1">
+  <parameter name="BITS_PER_SYMBOL" value="13" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="FIFO_DEPTH" value="16" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="SYMBOLS_PER_BEAT" value="1" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+ </module>
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="log_controller_0.fifo_source"
+   end="data_in_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="log_cdc_0.fifo_source"
+   end="data_out_cdc_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="data_in_fifo.out"
+   end="log_controller_0.fifo_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="data_out_cdc_fifo.out"
+   end="log_cdc_0.fifo_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="rffe_in_fifo.out"
+   end="log_controller_0.rffe_fifo_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="rffe_out_cdc_fifo.out"
+   end="log_cdc_0.rffe_fifo_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="log_controller_0.rffe_fifo_source"
+   end="rffe_in_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="log_cdc_0.rffe_fifo_source"
+   end="rffe_out_cdc_fifo.in" />
+ <connection
+   kind="avalon_streaming"
+   version="20.1"
+   start="log_controller_0.source"
+   end="log_cdc_0.sink" />
+ <connection kind="clock" version="20.1" start="clk_0.clk" end="data_in_fifo.clk" />
+ <connection kind="clock" version="20.1" start="clk_0.clk" end="rffe_in_fifo.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="log_controller_0.clock" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="data_out_cdc_fifo.in_clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="rffe_out_cdc_fifo.in_clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="log_cdc_0.in_clock" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="out_clk.clk"
+   end="data_out_cdc_fifo.out_clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="out_clk.clk"
+   end="rffe_out_cdc_fifo.out_clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="out_clk.clk"
+   end="log_cdc_0.out_clock" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="data_in_fifo.clk_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="rffe_in_fifo.clk_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="data_out_cdc_fifo.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="rffe_out_cdc_fifo.in_clk_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="out_clk.clk_reset"
+   end="data_out_cdc_fifo.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="out_clk.clk_reset"
+   end="rffe_out_cdc_fifo.out_clk_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="log_controller_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="log_cdc_0.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

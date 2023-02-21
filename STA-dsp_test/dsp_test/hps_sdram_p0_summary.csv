@@ -1,0 +1,10 @@
+Core: hps_sdram_p0 - Instance: inst10|u0|hps_0|hps_io|border|hps_sdram_inst
+Path, Setup Margin, Hold Margin
+"Address Command (Slow 1100mV 85C Model)",0.603,0.587
+"Bus Turnaround Time (Slow 1100mV 85C Model)",3.333,--
+"Core (Slow 1100mV 85C Model)",1.73,0.143
+"Core Recovery/Removal (Slow 1100mV 85C Model)",3.375,0.47
+"DQS vs CK (Slow 1100mV 85C Model)",0.627,0.314
+"Postamble (Slow 1100mV 85C Model)",0.489,0.489
+"Read Capture (Slow 1100mV 85C Model)",0.233,0.186
+"Write (Slow 1100mV 85C Model)",0.243,0.243

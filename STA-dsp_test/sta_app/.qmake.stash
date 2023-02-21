@@ -1,0 +1,23 @@
+QMAKE_CXX.QT_COMPILER_STDCXX = 201402L
+QMAKE_CXX.QMAKE_GCC_MAJOR_VERSION = 10
+QMAKE_CXX.QMAKE_GCC_MINOR_VERSION = 3
+QMAKE_CXX.QMAKE_GCC_PATCH_VERSION = 1
+QMAKE_CXX.COMPILER_MACROS = \
+    QT_COMPILER_STDCXX \
+    QMAKE_GCC_MAJOR_VERSION \
+    QMAKE_GCC_MINOR_VERSION \
+    QMAKE_GCC_PATCH_VERSION
+QMAKE_CXX.INCDIRS = \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/arm-none-linux-gnueabihf/include/c++/10.3.1 \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/arm-none-linux-gnueabihf/include/c++/10.3.1/arm-none-linux-gnueabihf \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/arm-none-linux-gnueabihf/include/c++/10.3.1/backward \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/lib/gcc/arm-none-linux-gnueabihf/10.3.1/include \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/lib/gcc/arm-none-linux-gnueabihf/10.3.1/include-fixed \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/arm-none-linux-gnueabihf/include \
+    /home/VincNL/Projects/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include
+QMAKE_CXX.LIBDIRS = \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/lib/gcc/arm-none-linux-gnueabihf/10.3.1 \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/lib/gcc \
+    /home/VincNL/Projects/buildroot/output/host/opt/ext-toolchain/arm-none-linux-gnueabihf/lib \
+    /home/VincNL/Projects/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot/lib \
+    /home/VincNL/Projects/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib

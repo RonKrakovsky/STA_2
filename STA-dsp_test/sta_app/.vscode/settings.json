@@ -1,0 +1,16 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "qfile": "cpp",
+        "qapplication": "cpp",
+        "qchart": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "system_error": "cpp",
+        "qvalueaxis": "cpp"
+    }
+}
